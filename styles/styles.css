@@ -1,0 +1,153 @@
+/* 主窗口样式 */
+QMainWindow { 
+    background-color: #f5f5f7; 
+    border: none; 
+}
+
+/* 菜单栏样式 */
+QMenuBar { 
+    background-color: rgba(242, 242, 247, 0.9); 
+    color: #000000; 
+    padding: 5px; 
+    border-bottom: 1px solid #d1d1d6; 
+}
+QMenuBar::item { 
+    padding: 5px 12px; 
+    margin: 2px; 
+    border-radius: 6px; 
+}
+QMenuBar::item:selected { 
+    background-color: #e5e5ea; 
+}
+
+/* 中央部件样式 */
+QWidget#centralwidget { 
+    padding: 20px; 
+}
+
+/* 标签样式 */
+QLabel { 
+    color: #1c1c1e; 
+    font-size: 14px; 
+    padding: 5px; 
+}
+
+/* 单行输入框样式 */
+QLineEdit { 
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #d1d1d6; 
+    border-radius: 8px; 
+    padding: 10px 12px; 
+    font-size: 14px; 
+    selection-background-color: #007aff; 
+}
+QLineEdit:hover { 
+    border-color: #a1a1a6; 
+}
+QLineEdit:focus { 
+    border-color: #007aff; 
+    outline: none; 
+}
+
+/* 下拉框样式 - 完整版本 */
+QComboBox { 
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #d1d1d6; 
+    border-radius: 8px; 
+    padding: 10px 30px 10px 12px; 
+    font-size: 14px; 
+    min-width: 120px; 
+}
+QComboBox:hover { 
+    border-color: #a1a1a6; 
+}
+QComboBox:focus { 
+    border-color: #007aff; 
+    outline: none; 
+}
+QComboBox::drop-down { 
+    subcontrol-origin: padding; 
+    subcontrol-position: top right; 
+    width: 25px; 
+    border-left: none; 
+}
+QComboBox::down-arrow { 
+    image: url(:/icons/arrow_down.png); 
+    width: 12px; 
+    height: 12px; 
+}
+QComboBox QAbstractItemView { 
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #d1d1d6; 
+    border-radius: 8px; 
+    padding: 5px; 
+    outline: none; 
+    selection-background-color: #007aff; 
+    selection-color: #ffffff; 
+}
+QComboBox QAbstractItemView::item { 
+    padding: 10px 15px; 
+    margin: 2px 0; 
+    border-radius: 6px; 
+    min-height: 30px; 
+}
+QComboBox QAbstractItemView::item:hover { 
+    background-color: #f2f2f7; 
+}
+QComboBox QAbstractItemView::item:selected { 
+    background-color: #007aff; 
+    color: #ffffff; 
+}
+
+/* 按钮样式 */
+QPushButton { 
+    background-color: #007aff; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 8px; 
+    padding: 10px 24px; 
+    font-size: 14px; 
+    font-weight: 500; 
+}
+QPushButton:hover { 
+    background-color: #0051cc; 
+}
+QPushButton:pressed { 
+    background-color: #003791; 
+}
+QPushButton:disabled { 
+    background-color: #c7c7cc; 
+    color: #8e8e93; 
+}
+QPushButton#pushButton:checked { 
+    background-color: #ff3b30; 
+}
+QPushButton#pushButton:checked:hover { 
+    background-color: #d70015; 
+}
+
+/* 文本编辑框样式 */
+QTextEdit { 
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #d1d1d6; 
+    border-radius: 8px; 
+    padding: 10px; 
+    /*font-family: Consolas, 'Courier New', monospace; */
+    font-size: 12px; 
+    selection-background-color: #007aff; 
+}
+QTextEdit:focus { 
+    border-color: #007aff; 
+    outline: none; 
+}
+
+/* 状态栏样式 */
+QStatusBar { 
+    background-color: rgba(242, 242, 247, 0.9); 
+    color: #1c1c1e; 
+    border-top: 1px solid #d1d1d6; 
+}

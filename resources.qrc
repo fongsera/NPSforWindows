@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>styles/styles.css</file>
+        <file>styles/logo.svg</file> 
+        <file>styles/OPPOSans4.0.ttf</file> 
+    </qresource>
+</RCC>
